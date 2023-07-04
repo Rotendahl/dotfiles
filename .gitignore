@@ -1,0 +1,5 @@
+fish/completions/docker.fish
+fish/completions/helm.fish
+fish/completions/kubectl.fish
+fish/completions/gh.fish
+fish/completions/wd.fish
