@@ -13,4 +13,9 @@ gh completion -s fish > fish/completions/gh.fish
 wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
 
 # Fish
-ln -s fish ~/.config/fish
+ln -s -F $(realpath fish) ~/.config/fish
+
+
+## Get themes
+mkdir -p ~/.config/colorls/
+wget -O ~/.config/colorls/dark_colors.yaml https://github.com/dracula/colorls/raw/3f1e3cf325c86e3019a1b7c3776b3a348fe6b530/dark_colors.yaml
