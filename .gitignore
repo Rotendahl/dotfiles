@@ -3,4 +3,5 @@ fish/completions/helm.fish
 fish/completions/kubectl.fish
 fish/completions/gh.fish
 fish/completions/wd.fish
+fish/completions/pip.fish
 fish/functions/wd.fish

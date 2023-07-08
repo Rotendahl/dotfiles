@@ -7,7 +7,7 @@ wget -O fish/completions/wd.fish https://github.com/Rotendahl/plugin-wd/raw/mast
 helm completion fish > fish/completions/helm.fish
 kubectl completion fish > fish/completions/kubectl.fish
 gh completion -s fish > fish/completions/gh.fish
-
+pip completion --fish > fish/completions/pip.fish
 
 # Get functions
 wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
