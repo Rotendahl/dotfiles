@@ -13,6 +13,7 @@ set PATH $HOME/.cabal/bin $HOME/.ghcup/bin $PATH
 set PATH /opt/homebrew/opt/ruby/bin $PATH
 set GEMPATH (string join '/bin:' $(string split ':' $(gem environment gempath)))/bin
 set PATH $GEMPATH $PATH
+set fish_complete_path ~/.config/fish/completions/generated $fish_complete_path
 
 ## Variables
 set VISUAL vim
