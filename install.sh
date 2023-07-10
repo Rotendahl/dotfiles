@@ -20,3 +20,27 @@ ln -s -F  fish ~/.config/fish
 ## Get themes
 mkdir -p ~/.config/colorls/
 wget -O ~/.config/colorls/dark_colors.yaml https://github.com/dracula/colorls/raw/3f1e3cf325c86e3019a1b7c3776b3a348fe6b530/dark_colors.yaml
+
+
+## Set paths
+fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
+fish_add_path $HOME/.dotnet/tools
+fish_add_path $HOME/.cabal/bin $HOME/.ghcup/bin
+fish_add_path /opt/homebrew/opt/ruby/bin
+fish_add_path $((string join '/bin:' $(string split ':' $(gem environment gempath)))/bin)
+
+set -U fish_complete_path ~/.config/fish/completions/generated $fish_complete_path
+
+
+## Variables
+set -U VISUAL vim
+set -U EDITOR $VISUAL
+set -U SSH_AUTH_SOCK /Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock
+set -U PAGER bat
+set -U PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+set -U DOTNET_WATCH_RESTART_ON_RUDE_EDIT 1
+### Work Variables
+set -U MONTHIO_VALUT ZICVAAFIWRBTHEEFSG3KXXATRI
+set -U SENTRY_DSN ''
+set -U CLOUD_DEVELOPMENT_NAMESPACE brotual
