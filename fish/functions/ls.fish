@@ -5,7 +5,7 @@ function ls
         if test $(dark-mode status) = on
             set color dark
         end
-        colorls -A --$color $argv
+        colorls -A --$color $argv --gs
     else
         command ls $argv
     end
