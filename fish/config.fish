@@ -24,6 +24,7 @@ alias py="bpython"
 abbr --add teli telepresence intercept
 abbr --add tree colorls --tree=2
 abbr --add rm trash
+abbr --add reload source ~/.config/fish/config.fish
 
 ## Acitvate pyenv
 pyenv init - | source
