@@ -1,3 +1,4 @@
+# Run a shortcut from the command line
 function task-template
     if test $argv[1] = daily
         shortcuts run 'Daily Checklist'

@@ -1,3 +1,4 @@
+# Do a google search on argv
 function google
     set query (string join ' ' (string escape --style  url $argv))
     echo $query

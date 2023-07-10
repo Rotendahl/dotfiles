@@ -1,3 +1,4 @@
+# List all outdated packages from all package managers
 function outdated-packages
     echo "Updating brew"
     brew update
