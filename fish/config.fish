@@ -12,9 +12,13 @@ if it2check
     oh-my-posh init fish --config /Users/rotendahl/Config/oh-my-posh.yaml | source
 end
 
+## Get 1password plugins
+if test -e {$HOME}/.config/op/plugins.sh
+    source {$HOME}/.config/op/plugins.sh
+end
+
 ## Alias
 alias py="bpython"
-alias gh="op plugin run -- gh"
 
 ### Abbreviations
 abbr --add teli telepresence intercept
