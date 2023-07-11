@@ -8,8 +8,8 @@ end
 
 
 ## Prompt
-if it2check
-    oh-my-posh init fish --config /Users/rotendahl/Config/oh-my-posh.yaml | source
+if test -e {$HOME}/Config/oh-my-posh.yaml
+    oh-my-posh init fish --config {$HOME}/Config/oh-my-posh.yaml | source
 end
 
 ## Get 1password plugins
