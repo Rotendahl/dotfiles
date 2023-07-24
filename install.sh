@@ -14,7 +14,7 @@ telepresence completion fish > ~/.config/fish/completions/generated/telepresence
 wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
 
 # Fish
-ln -s -F  fish ~/.config/fish
+ln -s -F $(realpath fish) ~/.config/fish
 
 
 ## Get themes
@@ -27,7 +27,7 @@ fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
 fish_add_path $HOME/.dotnet/tools
 fish_add_path $HOME/.cabal/bin $HOME/.ghcup/bin
 fish_add_path /opt/homebrew/opt/ruby/bin
-fish_add_path $((string join '/bin:' $(string split ':' $(gem environment gempath)))/bin)
+fish_add_path $(string join '/bin:' $(string split ':' $(gem environment gempath)))/bin
 
 set -U fish_complete_path ~/.config/fish/completions/generated $fish_complete_path
 
