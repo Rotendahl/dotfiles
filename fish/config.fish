@@ -19,6 +19,7 @@ end
 
 ## Alias
 alias py="bpython"
+alias vi="nvim"
 
 ### Abbreviations
 abbr --add teli telepresence intercept

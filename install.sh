@@ -33,7 +33,7 @@ set -U fish_complete_path ~/.config/fish/completions/generated $fish_complete_pa
 
 
 ## Variables
-set -U VISUAL vim
+set -U VISUAL nvim
 set -U EDITOR $VISUAL
 set -U SSH_AUTH_SOCK /Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock
 set -U PAGER bat
