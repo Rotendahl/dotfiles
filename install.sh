@@ -13,9 +13,9 @@ telepresence completion fish > ~/.config/fish/completions/generated/telepresence
 # Get functions
 wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
 
-# Fish
+# Create symlinks
 ln -s -F $(realpath fish) ~/.config/fish
-
+ln -s -F $(realpath global_gitignore) ~/.global_gitignore
 
 ## Get themes
 mkdir -p ~/.config/colorls/
