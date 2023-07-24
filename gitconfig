@@ -1,0 +1,23 @@
+[user]
+	name = Benjamin
+	email = benjamin@rotendahl.dk
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBoNTmmZMCHFZjJeoiB0CgQQRvgDD7AJHN/SQJBUbTnm
+
+[core]
+	excludesfile = ~/.global_gitignore
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	allowedSignersFile = /Users/rotendahl/.ssh/allowed_signers
+
+[pull]
+	rebase = true
+
+[init]
+	defaultBranch = master

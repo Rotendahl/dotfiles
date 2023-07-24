@@ -16,6 +16,7 @@ wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugi
 # Create symlinks
 ln -s -F $(realpath fish) ~/.config/fish
 ln -s -F $(realpath global_gitignore) ~/.global_gitignore
+ln -s -F $(realpath gitconfig) ~/.gitconfig
 
 ## Get themes
 mkdir -p ~/.config/colorls/
