@@ -1405,7 +1405,7 @@ Open Recent Directories…</string>
 			<key>Draw Powerline Glyphs</key>
 			<true/>
 			<key>Enable Triggers in Interactive Apps</key>
-			<false/>
+			<true/>
 			<key>Flashing Bell</key>
 			<true/>
 			<key>Foreground Color</key>
@@ -2194,9 +2194,9 @@ Open Recent Directories…</string>
 					<key>parameter</key>
 					<string>prod@prod</string>
 					<key>partial</key>
-					<false/>
+					<true/>
 					<key>regex</key>
-					<string> 󱃾 (?!brotual)</string>
+					<string>󱃾 (?!brotual)</string>
 				</dict>
 			</array>
 			<key>Unicode Normalization</key>
