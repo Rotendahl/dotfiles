@@ -23,8 +23,13 @@ blocks:
         background: "#FF9248"
         foreground: "#2d3436"
         powerline_symbol: 
-        style: powerline
-        template: "  {{ .Folder }} "
+        style: "powerline"
+        properties:
+          home_icon: "󰘘 "
+          folder_icon: " "
+          folder_separator_template: "/"
+          style: agnoster_full
+        template: "{{if eq .Folder \"src\"}} {{replaceP \"(/[\\\w-]*[^/])*\" .Parent \"$1\" }}󰘗 {{else}}   {{.Folder}} {{end}}"
 
       - type: git
         background: "#FFFB38"
@@ -210,10 +215,9 @@ blocks:
           discharging_icon: " "
         style: diamond
         template:
-          "{{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}
-          "
+          "{{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}"
 
-      - type: text # Exit code
+      - type: status
         background: "#40c4ff"
         foreground: "#ffffff"
         leading_diamond: " "
@@ -236,7 +240,7 @@ blocks:
         style: plain
         template: ╰─
 
-      - type: text
+      - type: status
         foreground: "#e0f8ff"
         foreground_templates:
           - "{{ if gt .Code 0 }}#ef5350{{ end }}"
