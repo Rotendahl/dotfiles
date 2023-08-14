@@ -16,6 +16,7 @@ kubectl completion fish > ~/.config/fish/completions/generated/kubectl.fish
 gh completion -s fish > ~/.config/fish/completions/generated/gh.fish
 pip completion --fish > ~/.config/fish/completions/generated/pip.fish
 telepresence completion fish > ~/.config/fish/completions/generated/telepresence.fish
+deepsource completion fish > ~/.config/fish/completions/generated/deepsource.fish
 
 # Get functions
 wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
