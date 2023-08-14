@@ -6,6 +6,9 @@ if test -e {$HOME}/.iterm2_shell_integration.fish
     source {$HOME}/.iterm2_shell_integration.fish
 end
 
+if test it2check
+    iterm2_prompt_mark ## Sends prompt to iterm
+end
 
 ## Prompt
 if test -e {$HOME}/Config/oh-my-posh.yaml
