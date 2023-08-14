@@ -1,5 +1,12 @@
 #!/usr/bin/env fish
 
+
+# Fisher https://github.com/jorgebucaran/fisher
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+## Install fisher plugins
+fisher install PatrickF1/fzf.fish
+
 # Get Completions
 mkdir -p ~/.config/fish/completions/generated
 wget -O ~/.config/fish/completions/generated/docker.fish https://github.com/docker/cli/raw/master/contrib/completion/fish/docker.fish

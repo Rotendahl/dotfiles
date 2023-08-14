@@ -1,2 +1,8 @@
 fish/completions/generated
 fish/functions/wd.fish
+
+_fzf_*
+fzf*
+
+fisher*
+fish_plugins
