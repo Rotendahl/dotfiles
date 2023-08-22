@@ -1467,6 +1467,17 @@ Open Recent Directories…</string>
 					<key>Text</key>
 					<string>0x1f</string>
 				</dict>
+				<key>0x2f-0xa0000-0x1a</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Label</key>
+					<string></string>
+					<key>Text</key>
+					<string>\</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
 				<key>0x32-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
@@ -2571,6 +2582,17 @@ Open Recent Directories…</string>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1f</string>
+				</dict>
+				<key>0x2f-0xa0000-0x1a</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Label</key>
+					<string></string>
+					<key>Text</key>
+					<string>\</string>
+					<key>Version</key>
+					<integer>1</integer>
 				</dict>
 				<key>0x32-0x40000</key>
 				<dict>
