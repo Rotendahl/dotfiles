@@ -3176,7 +3176,7 @@ Open Recent Directories…</string>
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string> 󱃾 (?!brotual)</string>
+					<string>󱃾 (?!brotual)</string>
 				</dict>
 			</array>
 			<key>Unicode Normalization</key>
