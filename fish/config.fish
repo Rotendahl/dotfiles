@@ -20,10 +20,6 @@ if test -e {$HOME}/.config/op/plugins.sh
     source {$HOME}/.config/op/plugins.sh
 end
 
-## Alias
-alias py="bpython"
-alias vi="nvim"
-
 ### Abbreviations
 abbr --add teli telepresence intercept
 abbr --add tree colorls --tree=2
