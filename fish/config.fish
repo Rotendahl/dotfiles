@@ -7,7 +7,8 @@ if test -e {$HOME}/.iterm2_shell_integration.fish
 end
 
 if test it2check
-    iterm2_prompt_mark ## Sends prompt to iterm
+    ## Sends prompt to iterm if iterm
+    functions iterm2_prompt_mark1; and iterm2_prompt_mark
 end
 
 ## Prompt
