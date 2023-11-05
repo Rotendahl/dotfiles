@@ -6,6 +6,8 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 
 ## Install fisher plugins
 fisher install PatrickF1/fzf.fish
+fisher install 'ryoppippi/fish-poetry'
+
 
 # Get Completions
 mkdir -p ~/.config/fish/completions/generated
