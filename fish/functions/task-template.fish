@@ -6,6 +6,8 @@ function task-template
         shortcuts run 'Weekly Review'
     else if test $argv[1] = work
         shortcuts run 'Work Checklist'
+     else if test $argv[1] = monthly
+        shortcuts run 'Monthly Checklist'
     else
         echo "Invalid argument"
     end
