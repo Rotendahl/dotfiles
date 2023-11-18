@@ -3194,7 +3194,7 @@ Open Recent Directories…</string>
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Use libtickit protocol</key>
-			<true/>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
