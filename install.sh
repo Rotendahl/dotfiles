@@ -19,6 +19,8 @@ gh completion -s fish > ~/.config/fish/completions/generated/gh.fish
 pip completion --fish > ~/.config/fish/completions/generated/pip.fish
 telepresence completion fish > ~/.config/fish/completions/generated/telepresence.fish
 deepsource completion fish > ~/.config/fish/completions/generated/deepsource.fish
+register-python-argcomplete --shell fish pipx ~/.config/fish/completions/generated/pipx.fish
+poetry completions fish > ~/.config/fish/completions/generated/poetry.fish
 
 # Get functions
 wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
@@ -51,7 +53,7 @@ set -U SSH_AUTH_SOCK /Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.
 set -U PAGER bat
 set -U PYENV_ROOT $HOME/.pyenv
 set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
-set -U DOTNET_WATCH_RESTART_ON_RUDE_EDIT 1
+set -U DOTNET_WATCH_RESTART_ON_RUDE_EDIT true
 ### Work Variables
 set -U MONTHIO_VALUT ZICVAAFIWRBTHEEFSG3KXXATRI
 set -U SENTRY_DSN ''
