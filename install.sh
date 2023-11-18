@@ -39,6 +39,7 @@ fish_add_path $HOME/.dotnet/tools
 fish_add_path $HOME/.cabal/bin $HOME/.ghcup/bin
 fish_add_path /opt/homebrew/opt/ruby/bin
 fish_add_path $(string join '/bin:' $(string split ':' $(gem environment gempath)))/bin
+fish_add_path  /Users/rotendahl/.local/bin
 
 set -U fish_complete_path ~/.config/fish/completions/generated $fish_complete_path
 
