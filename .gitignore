@@ -1,6 +1,6 @@
 fish/completions/generated
 fish/functions/wd.fish
-
+fish/functions/br.fish
 _fzf_*
 fzf*
 
