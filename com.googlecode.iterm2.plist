@@ -2200,8 +2200,6 @@ Open Recent Directories…</string>
 				<dict>
 					<key>action</key>
 					<string>SetHostnameTrigger</string>
-					<key>disabled</key>
-					<false/>
 					<key>parameter</key>
 					<string>prod@prod</string>
 					<key>partial</key>
@@ -2498,6 +2496,8 @@ Open Recent Directories…</string>
 			<true/>
 			<key>Draw Powerline Glyphs</key>
 			<false/>
+			<key>Enable Triggers in Interactive Apps</key>
+			<true/>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
@@ -3173,8 +3173,6 @@ Open Recent Directories…</string>
 					<string>SetHostnameTrigger</string>
 					<key>parameter</key>
 					<string>prod@prod</string>
-					<key>partial</key>
-					<true/>
 					<key>regex</key>
 					<string>󱃾 (?!brotual)</string>
 				</dict>
@@ -3484,7 +3482,7 @@ Open Recent Directories…</string>
 			</dict>
 			<key>Bound Hosts</key>
 			<array>
-				<string>prod</string>
+				<string>!prod@</string>
 			</array>
 			<key>Character Encoding</key>
 			<integer>4</integer>
@@ -4356,21 +4354,9 @@ Open Recent Directories…</string>
 			<array>
 				<dict>
 					<key>action</key>
-					<string>SetHostnameTrigger</string>
-					<key>parameter</key>
-					<string>rotendahl@brobook</string>
+					<string>BounceTrigger</string>
 					<key>regex</key>
-					<string>brotual</string>
-				</dict>
-				<dict>
-					<key>action</key>
-					<string>SetHostnameTrigger</string>
-					<key>parameter</key>
-					<string>prod@prod</string>
-					<key>partial</key>
-					<true/>
-					<key>regex</key>
-					<string> 󱃾 (?!brotual)</string>
+					<string></string>
 				</dict>
 			</array>
 			<key>Underline Color</key>
