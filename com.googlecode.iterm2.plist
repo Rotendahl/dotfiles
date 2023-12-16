@@ -2202,8 +2202,6 @@ Open Recent Directories…</string>
 					<string>SetHostnameTrigger</string>
 					<key>parameter</key>
 					<string>prod@prod</string>
-					<key>partial</key>
-					<true/>
 					<key>regex</key>
 					<string>󱃾 (?!brotual)</string>
 				</dict>
