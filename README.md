@@ -1,5 +1,6 @@
 # Dotfiles config
 This repo contains configuration files for my personal setup.
+---
 
 ## Terminal
 For a description of the setup see my [blog post](https://rotendahl.dk/posts/terminal-setup/)
