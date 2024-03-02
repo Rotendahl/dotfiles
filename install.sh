@@ -13,6 +13,7 @@ fisher install 'ryoppippi/fish-poetry'
 mkdir -p ~/.config/fish/completions/generated
 wget -O ~/.config/fish/completions/generated/docker.fish https://github.com/docker/cli/raw/master/contrib/completion/fish/docker.fish
 wget -O ~/.config/fish/completions/generated/wd.fish https://github.com/Rotendahl/plugin-wd/raw/master/completions/wd.fish
+wget -O ~/.config/fish/completions/generated/git.fish https://github.com/fish-shell/fish-shell/raw/master/share/completions/git.fish
 helm completion fish > ~/.config/fish/completions/generated/helm.fish
 kubectl completion fish > ~/.config/fish/completions/generated/kubectl.fish
 gh completion -s fish > ~/.config/fish/completions/generated/gh.fish
