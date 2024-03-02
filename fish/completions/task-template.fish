@@ -1,1 +1,1 @@
-complete -c task-template -f -a 'daily weekly work monthly'
+complete -c task-template -f -a 'daily weekly work monthly completed'
