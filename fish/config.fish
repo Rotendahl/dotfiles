@@ -27,6 +27,10 @@ abbr --add tree colorls --tree=2
 abbr --add rm trash
 abbr --add reload source ~/.config/fish/config.fish
 
+### Tele presence abbriviations
+abbr --add tele-budget telepresence intercept budget-app --port 5006:80 --http-header=all --replace
+abbr --add tele-enricher telepresence intercept transaction-enrichment-app --port 5010:80 --http-header=all --replace
+
 ## Acitvate pyenv
 pyenv init - | source
 
