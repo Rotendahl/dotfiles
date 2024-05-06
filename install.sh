@@ -22,6 +22,7 @@ telepresence completion fish > ~/.config/fish/completions/generated/telepresence
 deepsource completion fish > ~/.config/fish/completions/generated/deepsource.fish
 register-python-argcomplete --shell fish pipx ~/.config/fish/completions/generated/pipx.fish
 poetry completions fish > ~/.config/fish/completions/generated/poetry.fish
+loft completion fish > ~/Config/fish/completions/loft.fish
 
 # Get functions
 wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
