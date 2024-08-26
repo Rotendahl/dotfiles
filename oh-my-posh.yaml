@@ -2,9 +2,20 @@
 final_space: true
 shell_integration: true
 version: 2
+
+# Prompt used for non bottom active one
+transient_prompt:
+  foreground: "magenta"
+  background: "transparent"
+  template: " "
+
+secondary_prompt:
+  template: ""
+
 blocks:
   - type: prompt
     alignment: left
+    newline: true
     segments:
       - type: shell
         background: "#0077c2"
