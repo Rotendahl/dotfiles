@@ -1,6 +1,6 @@
 # Inject env vars from 1Password into the current shell
 function MonthioBackendSecrets
-    set envFileName "bro-op.env"
+    set envFileName ".envrc"
     if test ! -e $envFileName
         printf "%s\n" "No $envFileName file found. Please create one with the following format:
         AzureKeyVault__ClientId=\"op://some-val\"
@@ -10,5 +10,5 @@ function MonthioBackendSecrets
     end
 
     vonthio
-    op --account Monthio run --no-masking --env-file=$envFileName -- $argv
+    op --account Monthio run --no-masking -- $argv
 end
