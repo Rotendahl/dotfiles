@@ -26,6 +26,7 @@ abbr --add teli telepresence intercept
 abbr --add tree colorls --tree=2
 abbr --add rm trash
 abbr --add reload source ~/.config/fish/config.fish
+abbr --add curl curlie
 
 ### Tele presence abbriviations
 abbr --add tele-budget telepresence intercept budget-app --port 5006:80 --http-header=all --replace
