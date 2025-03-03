@@ -19,3 +19,6 @@ function outdated-packages
     echo \nPip
     pip list --outdated
 end
+
+echo "Running dotnet tool update"
+dotnet tool update —all -g
