@@ -8,29 +8,25 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 fisher install PatrickF1/fzf.fish
 fisher install 'ryoppippi/fish-poetry'
 
-
-# Get Completions
-mkdir -p ~/.config/fish/completions/generated
-wget -O ~/.config/fish/completions/generated/docker.fish https://github.com/docker/cli/raw/master/contrib/completion/fish/docker.fish
-wget -O ~/.config/fish/completions/generated/wd.fish https://github.com/Rotendahl/plugin-wd/raw/master/completions/wd.fish
-wget -O ~/.config/fish/completions/generated/git.fish https://github.com/fish-shell/fish-shell/raw/master/share/completions/git.fish
-helm completion fish > ~/.config/fish/completions/generated/helm.fish
-kubectl completion fish > ~/.config/fish/completions/generated/kubectl.fish
-gh completion -s fish > ~/.config/fish/completions/generated/gh.fish
-pip completion --fish > ~/.config/fish/completions/generated/pip.fish
-telepresence completion fish > ~/.config/fish/completions/generated/telepresence.fish
-deepsource completion fish > ~/.config/fish/completions/generated/deepsource.fish
-register-python-argcomplete --shell fish pipx ~/.config/fish/completions/generated/pipx.fish
-poetry completions fish > ~/.config/fish/completions/generated/poetry.fish
-loft completion fish > ~/Config/fish/completions/loft.fish
-
-# Get functions
-wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
-
 # Create symlinks
 ln -s -F $(realpath fish) ~/.config/fish
 ln -s -F $(realpath global_gitignore) ~/.global_gitignore
 ln -s -F $(realpath gitconfig) ~/.gitconfig
+
+# Get Completions
+mkdir -p ~/.config/fish/completions/generated
+wget -O ~/.config/fish/completions/generated/wd.fish https://github.com/Rotendahl/plugin-wd/raw/master/completions/wd.fish
+wget -O ~/.config/fish/completions/generated/git.fish https://github.com/fish-shell/fish-shell/raw/master/share/completions/git.fish
+helm completion fish >/Users/rotendahl/.cache/fish/generated_completions/helm.fish
+kubectl completion fish >/Users/rotendahl/.cache/fish/generated_completions/kubectl.fish
+gh completion -s fish >/Users/rotendahl/.cache/fish/generated_completions/gh.fish
+pip completion --fish >/Users/rotendahl/.cache/fish/generated_completions/pip.fish
+telepresence completion fish >/Users/rotendahl/.cache/fish/generated_completions/telepresence.fish
+
+
+# Get functions
+wget -O fish/functions/wd.fish https://raw.githubusercontent.com/Rotendahl/plugin-wd/master/functions/wd.fish
+
 
 ## Get themes
 mkdir -p ~/.config/colorls/
