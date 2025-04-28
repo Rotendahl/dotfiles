@@ -2,24 +2,31 @@
 ######################## Bad-ass fish config file! #############################
 ################################################################################
 
-if test -e {$HOME}/.iterm2_shell_integration.fish
+if status is-interactive
     source {$HOME}/.iterm2_shell_integration.fish
+    if test it2check
+        ## Sends prompt to iterm if iterm
+        functions iterm2_prompt_mark1; and iterm2_prompt_mark
+    end
+
+    ## Prompt
+    if test -e {$HOME}/DotFiles/oh-my-posh.yaml
+        oh-my-posh init fish --config {$HOME}/DotFiles/oh-my-posh.yaml | source
+    end
+
+    ## Get 1password plugins
+    if test -e {$HOME}/.config/op/plugins.sh
+        source {$HOME}/.config/op/plugins.sh
+    end
 end
 
-if test it2check
-    ## Sends prompt to iterm if iterm
-    functions iterm2_prompt_mark1; and iterm2_prompt_mark
-end
-
-## Prompt
-if test -e {$HOME}/Config/oh-my-posh.yaml
-    oh-my-posh init fish --config {$HOME}/Config/oh-my-posh.yaml | source
-end
-
-## Get 1password plugins
-if test -e {$HOME}/.config/op/plugins.sh
-    source {$HOME}/.config/op/plugins.sh
-end
+### Generate dynamic completions
+helm completion fish >/Users/rotendahl/.cache/fish/generated_completions/helm.fish
+kubectl completion fish >/Users/rotendahl/.cache/fish/generated_completions/kubectl.fish
+gh completion -s fish >/Users/rotendahl/.cache/fish/generated_completions/gh.fish
+telepresence completion fish >/Users/rotendahl/.cache/fish/generated_completions/telepresence.fish
+mirrord completions fish >/Users/rotendahl/.cache/fish/generated_completions/mirrord.fish
+gh completion -s fish >/Users/rotendahl/.cache/fish/generated_completions/gh.fish
 
 ### Abbreviations
 abbr --add teli telepresence intercept
@@ -28,9 +35,6 @@ abbr --add rm trash
 abbr --add reload source ~/.config/fish/config.fish
 abbr --add curl curlie
 
-### Tele presence abbriviations
-abbr --add tele-budget telepresence intercept budget-app --port 5006:80 --http-header=all --replace
-abbr --add tele-enricher telepresence intercept transaction-enrichment-app --port 5010:80 --http-header=all --replace
-
-## Acitvate pyenv
-pyenv init - | source
+### Tele presence abbreviations
+abbr --add tele-budget telepresence intercept budget-app --port 5006:80 --replace
+abbr --add tele-enricher telepresence intercept transaction-enrichment-app --port 5010:80 --replace
