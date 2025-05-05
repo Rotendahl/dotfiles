@@ -2,7 +2,7 @@
 function ls
     if test -t 1
         set color light
-        if test $(dark-mode status) = on
+        if defaults read -g AppleInterfaceStyle >/dev/null
             set color dark
         end
         colorls -A --$color $argv --gs
