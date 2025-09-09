@@ -38,3 +38,5 @@ abbr --add curl curlie
 ### Tele presence abbreviations
 abbr --add tele-budget telepresence intercept budget-app --port 5006:80 --replace
 abbr --add tele-enricher telepresence intercept transaction-enrichment-app --port 5010:80 --replace
+
+pyenv init - fish | source
