@@ -15,10 +15,9 @@ function outdated-packages
     echo \nGithub
     gh extension upgrade --all --dry-run
 
-
     echo \nPip
     pip list --outdated
 end
 
 echo "Running dotnet tool update"
-dotnet tool update —all -g
+dotnet tool update -—all -g
