@@ -23,3 +23,6 @@
 	defaultBranch = master
 [push]
 	autoSetupRemote = true
+
+[includeIf "gitdir:~/Monthio/"]
+	path =~/DotFiles/monthioGitconfig
