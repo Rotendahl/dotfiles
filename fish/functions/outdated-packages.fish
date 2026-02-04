@@ -20,4 +20,4 @@ function outdated-packages
 end
 
 echo "Running dotnet tool update"
-dotnet tool update -—all -g
+dotnet tool update --all -g
