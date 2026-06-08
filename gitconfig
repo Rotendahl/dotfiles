@@ -24,5 +24,8 @@
 [push]
 	autoSetupRemote = true
 
+[status]
+	compareBranches = @{upstream} @{push}
+
 [includeIf "gitdir:~/Monthio/"]
 	path =~/DotFiles/monthioGitconfig
